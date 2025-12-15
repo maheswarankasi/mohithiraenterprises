@@ -14,6 +14,9 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
+hr{
+  margin: 0 !important;
+}
 #backToTop {
   display: none;
   position: fixed;
@@ -89,11 +92,42 @@ header h4 {
   font-size: 1.5rem;
   margin: 1rem 0;
   color: #333;
+  font-weight: 600;
 }
 .container p {
   font-size: 1.15rem;
   color: #333;
+  padding: 0rem 1rem 1rem;
 }
+.container q {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  width: 100%;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+.services-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+.services-btn .btn{
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #233671;
+  color: #fff;
+  border: 1px solid #233671;
+  transition: all 0.3s linear;
+}
+.services-btn .btn:hover{
+  color: #233671;
+  background-color: #fff;
+  border: 1px solid #233671;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
 }
@@ -103,9 +137,17 @@ header h4 {
   }
   .container h2 {
     font-size: 1.2rem;
-    margin: 0.6rem 0;
   }
   .container p {
+    font-size: 1rem;
+  }
+  #homePage header .navbar .mb-nav{
+    position: absolute;
+    top: 7rem;
+    background-color: #233671;
+    width: 100%;
+  }
+  .services-btn .btn{
     font-size: 1rem;
   }
 } /* Small Devices */
