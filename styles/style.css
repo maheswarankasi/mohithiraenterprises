@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  color: #333;
 }
 h1,
 h2,
@@ -14,7 +15,7 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
-hr{
+hr {
   margin: 0 !important;
 }
 #backToTop {
@@ -97,6 +98,11 @@ header .nav-link {
   color: #333;
   font-weight: 600;
 }
+.container h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
 .container p {
   font-size: 1.15rem;
   color: #333;
@@ -117,7 +123,7 @@ header .nav-link {
   align-items: center;
   margin: 1rem auto;
 }
-.services-btn .btn{
+.services-btn .btn {
   font-size: 1.2rem;
   font-weight: 600;
   background-color: #233671;
@@ -125,12 +131,12 @@ header .nav-link {
   border: 1px solid #233671;
   transition: all 0.3s linear;
 }
-.services-btn .btn:hover{
+.services-btn .btn:hover {
   color: #233671;
   background-color: #fff;
   border: 1px solid #233671;
 }
-.card .card-title{
+.card .card-title {
   font-weight: 550;
 }
 .why-us {
@@ -138,7 +144,7 @@ header .nav-link {
   padding: 1rem 0;
   margin: 1rem 0;
 }
-.why-us-keypt-list{
+.why-us-keypt-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +154,7 @@ header .nav-link {
 .why-us-keypt {
   padding: 0 !important;
 }
-.gallery-container{
+.gallery-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -159,7 +165,36 @@ header .nav-link {
 .gallery-container img {
   max-width: 300px;
 }
-footer{
+/* services */
+.services-sect h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.services-sect ul {
+  margin-left: 2rem;
+}
+.services-sect ul li {
+  margin-bottom: 0.5rem;
+}
+.services-sect-img {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+.services-sect img {
+  width: 500px;
+}
+.service-list {
+  margin-left: 2rem;
+  list-style: "->   ";
+}
+.service-list li a {
+  color: #233671;
+}
+
+/* Footer */
+footer {
   background-color: rgba(212, 212, 212, 0.541);
 }
 .footer {
@@ -180,17 +215,36 @@ footer{
 .footer-contact {
   width: 40%;
 }
-address{
+address {
   margin-bottom: 0;
   margin-top: 1rem;
 }
+.footer-contact-sect {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem 0;
+}
+.footer-contact-sect .footer-contact-text a {
+  text-decoration: none;
+  color: #333;
+}
+footer .credit {
+  font-size: 0.6rem;
+  text-align: right;
+  padding: 1rem 1rem 2rem;
+}
 /* Media Queries */
 @media screen and (max-width: 990px) {
-  #homePage header .navbar .mb-nav{
+  #homePage header .navbar .mb-nav {
     position: absolute;
     top: 7rem;
     background-color: #233671;
     width: 100%;
+  }
+  header .navbar .btn-call {
+    margin-left: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -203,7 +257,7 @@ address{
   .container p {
     font-size: 1rem;
   }
-  .services-btn .btn{
+  .services-btn .btn {
     font-size: 1rem;
   }
   .card .card-title {
@@ -212,7 +266,8 @@ address{
   .footer {
     padding: 1rem;
   }
-  .footer-address, .footer-contact{
+  .footer-address,
+  .footer-contact {
     width: 100%;
   }
   .footer h3 {
@@ -226,8 +281,11 @@ address{
   header h4 {
     font-size: 1.1rem;
   }
-  .why-us-keypt{
+  .why-us-keypt {
     width: 100%;
     margin-left: 2rem;
+  }
+  .services-sect img {
+    width: 280px;
   }
 }
