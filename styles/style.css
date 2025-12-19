@@ -315,6 +315,13 @@ footer .credit {
   text-align: right;
   padding: 1rem 1rem 2rem;
 }
+.thank-you-sect {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 /* Media Queries */
 @media screen and (max-width: 990px) {
   #homePage header .navbar .mb-nav {
