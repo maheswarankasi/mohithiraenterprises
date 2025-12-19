@@ -1,13 +1,4 @@
 $(document).ready(function () {
-  $("#get-in-touch-submit").on("click", (e) => {
-    // e.preventDefault();
-    let name = document.getElementById("nameInput").value;
-    let email = document.getElementById("emailInput").value;
-    let mobileNumber = document.getElementById("mobileInput").value;
-    // let service = document.getElementById("serviceInput").value;
-    let message = document.getElementById("messageInput").value;
-    console.log(name, email, mobileNumber, message);
-  });
 
   // Show button when scrolled down 100px
   $(window).scroll(function () {
