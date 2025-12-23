@@ -1,5 +1,25 @@
 $(document).ready(function () {
 
+  //email validation
+  const emailInput = document.getElementById("emailInput");
+  const errorSpan = document.getElementById("emailError");
+
+  emailInput.addEventListener("input", function () {
+    const value = emailInput.value.trim();
+    const strictEmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (value === "") {
+      errorSpan.textContent = "";
+    } else if (!strictEmailRegex.test(value)) {
+      errorSpan.textContent =
+        "Please enter a valid email like user@example.com";
+      emailInput.setCustomValidity("Invalid email");
+    } else {
+      errorSpan.textContent = "";
+      emailInput.setCustomValidity("");
+    }
+  });
+
   // Show button when scrolled down 100px
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
