@@ -88,7 +88,7 @@ header .head-btn .btn {
   background: linear-gradient(135deg, #233671, #3a4fa3);
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   display: inline-block;
   animation: pulse 2s infinite; /* 👈 animation added */
@@ -104,18 +104,17 @@ header .head-btn .btn:hover {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 rgba(35,54,113, 0.7);
+    box-shadow: 0 0 0 rgba(35, 54, 113, 0.7);
   }
   50% {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(35,54,113, 0.6);
+    box-shadow: 0 0 20px rgba(35, 54, 113, 0.6);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 rgba(35,54,113, 0.7);
+    box-shadow: 0 0 0 rgba(35, 54, 113, 0.7);
   }
 }
-
 
 #homePage .container h4 {
   font-size: 1.2rem;
@@ -227,10 +226,10 @@ header .nav-link {
 .service-list li a {
   color: #233671;
 }
-.container .nav-tabs .nav-link{
+.container .nav-tabs .nav-link {
   color: #333;
 }
-.container .nav-tabs .active{
+.container .nav-tabs .active {
   color: #233671 !important;
 }
 .contact-us-column {
@@ -249,10 +248,10 @@ header .nav-link {
 .contact-address h4 {
   margin-bottom: 0.5rem;
 }
-.contact-address p{
+.contact-address p {
   padding-bottom: 0.5rem;
 }
-.contact-address a{
+.contact-address a {
   text-decoration: none;
 }
 .get-in-touch {
@@ -270,7 +269,9 @@ header .nav-link {
   max-width: 300px;
   margin: 0 auto;
 }
-.get-in-touch .input-field input, select, textarea {
+.get-in-touch .input-field input,
+select,
+textarea {
   width: 100%;
   margin-bottom: 16px;
   padding: 0.5rem;
@@ -296,7 +297,7 @@ header .nav-link {
   border-radius: 4px;
   transition: all 0.2s linear;
 }
-.get-in-touch form button:hover{
+.get-in-touch form button:hover {
   color: #233671;
   background-color: #fff;
 }
@@ -388,7 +389,8 @@ footer .credit {
   .footer h3 {
     font-size: 1.15rem;
   }
-  .contact-address, .get-in-touch{
+  .contact-address,
+  .get-in-touch {
     width: 100%;
   }
 } /* Small Devices */

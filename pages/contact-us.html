@@ -44,9 +44,9 @@
             <li class="nav-item">
               <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link text-white" text-white href="./about-us.html">About Us</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link text-white" text-white href="./our-services.html">Our Services</a>
             </li>
@@ -83,7 +83,7 @@
         </div>
         <div class="get-in-touch">
           <h4>Get In Touch</h4>
-          <form method="POST" target="_self" action="https://formsubmit.co/jayamvkrenterprises@gmail.com">
+          <form method="POST" id="myForm" target="_self" action="https://formsubmit.co/jayamvkrenterprises@gmail.com">
             <input type="hidden" name="_template" value="table">
             <div class="input-field">
               <input type="text" placeholder="Name" name="name" rows="1" maxlength="50" required autocomplete="off" id="nameInput"
@@ -92,7 +92,6 @@
             <div class="input-field">
               <input type="email" name="email" name="email" inputmode="email" placeholder="Email" rows="1" maxlength="50" required
                 title="Enter your email" autocomplete="off" id="emailInput">
-              <span id="emailError"></span>
             </div>
             <div class="input-field">
               <input type="text" name="mobileNumber" placeholder="Phone Number" pattern="\d{10}" title="Enter your phone number" id="mobileInput"
