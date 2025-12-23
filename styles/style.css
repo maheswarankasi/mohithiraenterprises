@@ -84,35 +84,34 @@ header .head-btn .btn {
   font-weight: 700;
   font-size: 1.1rem;
   padding: 0.8rem 1.5rem;
-  color: #fff;
-  background: linear-gradient(135deg, #233671, #3a4fa3);
-  border: none;
+  color: #233671; /* Dark text for contrast */
+  background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Light gradient */
+  border: 2px solid #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   display: inline-block;
-  animation: pulse 2s infinite; /* 👈 animation added */
-  transition: all 0.3s linear;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+
+  /* 👇 animation retained */
+  animation: bounceGlow 2s infinite;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 header .head-btn .btn:hover {
-  background: linear-gradient(135deg, #3a4fa3, #233671);
-  transform: scale(1.1) rotate(2deg); /* 👈 hover effect */
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  transform: scale(1.1);
 }
 
-/* 🔹 Keyframes for pulsing animation */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(35, 54, 113, 0.7);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(35, 54, 113, 0.6);
-  }
+/* 🔹 Keyframes for bounce + glow */
+@keyframes bounceGlow {
+  0%,
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 rgba(35, 54, 113, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
   }
 }
 
