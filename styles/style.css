@@ -266,7 +266,7 @@ header .nav-link {
   align-items: center;
   flex-direction: column;
 }
-#homePage .container .get-in-touch h4{
+#homePage .container .get-in-touch h4 {
   margin-bottom: 1rem;
 }
 .get-in-touch form {
@@ -366,7 +366,7 @@ footer .credit {
   header .navbar .btn-call {
     margin-left: 2rem;
   }
-  .contact-us-column{
+  .contact-us-column {
     flex-direction: column;
   }
 }
