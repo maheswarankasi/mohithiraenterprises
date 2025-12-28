@@ -246,8 +246,8 @@ header .nav-link {
 }
 #homePage .container .contact-address h4 {
   margin-bottom: 0.5rem;
-  color: #333;
-  text-align: left;
+  color: #333 !important;
+  text-align: left !important;
 }
 .contact-address p {
   padding-bottom: 0.5rem;
@@ -267,7 +267,7 @@ header .nav-link {
   flex-direction: column;
 }
 #homePage .container .get-in-touch h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 .get-in-touch form {
   max-width: 300px;
