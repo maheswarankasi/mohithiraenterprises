@@ -244,8 +244,10 @@ header .nav-link {
   width: 45%;
   padding: 1.5rem;
 }
-.contact-address h4 {
+#homePage .container .contact-address h4 {
   margin-bottom: 0.5rem;
+  color: #333;
+  text-align: left;
 }
 .contact-address p {
   padding-bottom: 0.5rem;
@@ -263,6 +265,9 @@ header .nav-link {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#homePage .container .get-in-touch h4{
+  margin-bottom: 1rem;
 }
 .get-in-touch form {
   max-width: 300px;
@@ -360,6 +365,9 @@ footer .credit {
   }
   header .navbar .btn-call {
     margin-left: 2rem;
+  }
+  .contact-us-column{
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
